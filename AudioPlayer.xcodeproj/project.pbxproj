@@ -15,6 +15,7 @@
 		092140692B86CA4100271526 /* AudioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140682B86CA4100271526 /* AudioPlayerTests.swift */; };
 		092140732B86CA4100271526 /* AudioPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140722B86CA4100271526 /* AudioPlayerUITests.swift */; };
 		092140752B86CA4100271526 /* AudioPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140742B86CA4100271526 /* AudioPlayerUITestsLaunchTests.swift */; };
+		092140822B86CADC00271526 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140812B86CADC00271526 /* AudioManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		0921406E2B86CA4100271526 /* AudioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		092140722B86CA4100271526 /* AudioPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerUITests.swift; sourceTree = "<group>"; };
 		092140742B86CA4100271526 /* AudioPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		092140812B86CADC00271526 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		092140832B86CC2D00271526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +99,13 @@
 		092140542B86CA4000271526 /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				092140832B86CC2D00271526 /* Info.plist */,
 				092140552B86CA4000271526 /* AudioPlayerApp.swift */,
 				092140572B86CA4000271526 /* ContentView.swift */,
 				092140592B86CA4000271526 /* Item.swift */,
 				0921405B2B86CA4100271526 /* Assets.xcassets */,
 				0921405D2B86CA4100271526 /* Preview Content */,
+				092140812B86CADC00271526 /* AudioManager.swift */,
 			);
 			path = AudioPlayer;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			files = (
 				092140582B86CA4000271526 /* ContentView.swift in Sources */,
 				0921405A2B86CA4000271526 /* Item.swift in Sources */,
+				092140822B86CADC00271526 /* AudioManager.swift in Sources */,
 				092140562B86CA4000271526 /* AudioPlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,13 +432,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AudioPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = X8N3FS592V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,13 +463,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AudioPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = X8N3FS592V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
