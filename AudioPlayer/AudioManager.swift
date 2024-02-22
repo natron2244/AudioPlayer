@@ -23,8 +23,9 @@ class AudioManager {
         guard let player = player else { return }
         
         lastPlayedTime = player.currentTime()
+        
         lastPlaybackRate = player.rate
-        player.pause() // Optional: to remember the spot and rate before lowering volume
+//        player.pause()  Optional: to remember the spot and rate before lowering volume
         
         volumeDipTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(lowerVolume), userInfo: nil, repeats: true)
     }
@@ -33,7 +34,7 @@ class AudioManager {
         guard let player = player else { return }
         
         if player.volume > 0 {
-            player.volume -= 0.03 // Adjust this value as per the required rate of volume decrease
+            player.volume -= 0.05 // Adjust this value as per the required rate of volume decrease
         } else {
             volumeDipTimer?.invalidate()
             player.pause()

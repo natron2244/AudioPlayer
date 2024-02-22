@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		092140562B86CA4000271526 /* AudioPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140552B86CA4000271526 /* AudioPlayerApp.swift */; };
 		092140582B86CA4000271526 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140572B86CA4000271526 /* ContentView.swift */; };
-		0921405A2B86CA4000271526 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140592B86CA4000271526 /* Item.swift */; };
 		0921405C2B86CA4100271526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0921405B2B86CA4100271526 /* Assets.xcassets */; };
 		0921405F2B86CA4100271526 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0921405E2B86CA4100271526 /* Preview Assets.xcassets */; };
 		092140692B86CA4100271526 /* AudioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140682B86CA4100271526 /* AudioPlayerTests.swift */; };
 		092140732B86CA4100271526 /* AudioPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140722B86CA4100271526 /* AudioPlayerUITests.swift */; };
 		092140752B86CA4100271526 /* AudioPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140742B86CA4100271526 /* AudioPlayerUITestsLaunchTests.swift */; };
 		092140822B86CADC00271526 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140812B86CADC00271526 /* AudioManager.swift */; };
+		092140852B86CEF200271526 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140842B86CEF200271526 /* DocumentPicker.swift */; };
+		092140872B86D41C00271526 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092140862B86D41C00271526 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		092140522B86CA4000271526 /* AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		092140552B86CA4000271526 /* AudioPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerApp.swift; sourceTree = "<group>"; };
 		092140572B86CA4000271526 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		092140592B86CA4000271526 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0921405B2B86CA4100271526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0921405E2B86CA4100271526 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		092140642B86CA4100271526 /* AudioPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +49,8 @@
 		092140742B86CA4100271526 /* AudioPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		092140812B86CADC00271526 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		092140832B86CC2D00271526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		092140842B86CEF200271526 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		092140862B86D41C00271526 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +104,11 @@
 				092140832B86CC2D00271526 /* Info.plist */,
 				092140552B86CA4000271526 /* AudioPlayerApp.swift */,
 				092140572B86CA4000271526 /* ContentView.swift */,
-				092140592B86CA4000271526 /* Item.swift */,
+				092140862B86D41C00271526 /* Item.swift */,
 				0921405B2B86CA4100271526 /* Assets.xcassets */,
 				0921405D2B86CA4100271526 /* Preview Content */,
 				092140812B86CADC00271526 /* AudioManager.swift */,
+				092140842B86CEF200271526 /* DocumentPicker.swift */,
 			);
 			path = AudioPlayer;
 			sourceTree = "<group>";
@@ -265,9 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092140872B86D41C00271526 /* Item.swift in Sources */,
 				092140582B86CA4000271526 /* ContentView.swift in Sources */,
-				0921405A2B86CA4000271526 /* Item.swift in Sources */,
 				092140822B86CADC00271526 /* AudioManager.swift in Sources */,
+				092140852B86CEF200271526 /* DocumentPicker.swift in Sources */,
 				092140562B86CA4000271526 /* AudioPlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
